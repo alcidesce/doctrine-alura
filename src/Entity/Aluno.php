@@ -41,9 +41,8 @@ class Aluno
      */
     public function setNome($nome): self
     {
-        // $this->nome = $nome;
-        $aluno = new Aluno();
-        $aluno->setNome('Teste')->getNome();
+        $this->nome = $nome;
+        return $this;
     }
 
     
