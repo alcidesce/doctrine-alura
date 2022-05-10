@@ -19,8 +19,8 @@ foreach ($alunoList as $aluno) {
     echo "ID: {$aluno->getId()}\nNome: {$aluno->getNome()}<br>";
 }
 
-$nico = $alunoRepository->find(3);
-echo $nico->getNome()."<br>";
+$nico = $alunoRepository->find(5);
+echo "<br>".$nico->getNome()."<br>";
 
 $sergioLopes = $alunoRepository->findBy([
     'nome' => 'Olivia Alcoforado'
